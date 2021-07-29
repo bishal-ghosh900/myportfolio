@@ -1,4 +1,4 @@
-import moenimeImage from "./Images/moenime.jpg";
+import moenimeImage from "./Images/moenime.gif";
 import profilePic from "./Images/profilePic.jpg";
 
 const Data = {
