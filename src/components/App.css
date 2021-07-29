@@ -1,0 +1,397 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(6, 6, 44);
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: "Courgette", "sans-serif";
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(6, 6, 44);
+
+  /* border: solid green; */
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+  /* border: solid yellow; */
+}
+
+.s1 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+/* media quary change require */
+.left {
+  width: 50%;
+  height: 100%;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* media quary change require */
+.right {
+  width: 50%;
+  height: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2rem;
+  /* border: solid blue; */
+}
+
+.profileImage {
+  border-radius: 50%;
+  border: solid aqua;
+}
+
+.intro {
+  color: aqua;
+}
+
+.h1Style {
+  font-size: 4rem;
+  margin-bottom: 30px;
+  font-family: "Indie Flower", "sans-serif";
+}
+
+.h2Style {
+  font-size: 3rem;
+  font-family: "Indie Flower", "sans-serif";
+}
+
+.btn {
+  text-decoration: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.btn-aqua {
+  color: aqua;
+  background-color: rgb(6, 6, 44);
+  border: solid aqua;
+}
+.btn-chartreuse {
+  color: chartreuse;
+  background-color: rgb(6, 6, 44);
+  border: solid chartreuse;
+}
+
+.s2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(6, 6, 44);
+  align-items: center;
+  flex-direction: column;
+}
+
+.skillHeading {
+  width: 100%;
+  color: chartreuse;
+  padding: 100px 0px 0px 40px;
+  border-bottom: solid;
+  font-size: 4rem;
+}
+.skillOptions {
+  padding: 50px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skillNames {
+  display: inline-block;
+  border: solid chartreuse;
+  border-radius: 30px;
+  color: chartreuse;
+  padding: 5px 30px;
+  margin: 10px;
+}
+
+.myInfo {
+  border-top: solid;
+  padding: 20px;
+  width: 80%;
+  font-size: 1.2rem;
+  color: chartreuse;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  word-spacing: 2px;
+}
+
+.scrollDown {
+  width: 80%;
+  padding: 40px;
+  text-align: right;
+}
+
+.s3 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(6, 6, 44);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectHeading {
+  font-size: 4rem;
+  padding: 100px 40px 0px 0px;
+  border-bottom: solid;
+  color: yellow;
+  width: 100%;
+  text-align: right;
+}
+
+.projectBody {
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.projectWrapper {
+  width: 650px;
+  height: 400px;
+  border: solid yellow;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  margin: 20px 0px;
+  box-shadow: 10px 10px yellowgreen;
+  transition: box-shadow 0.4s;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.projectWrapper:hover {
+  box-shadow: 20px 20px 5px yellowgreen;
+}
+
+.projectImage {
+  width: 60%;
+  height: 100%;
+}
+
+.projectInfo {
+  width: 40%;
+  height: 100%;
+  padding: 10px;
+  color: yellow;
+}
+
+.name {
+  font-size: 2rem;
+}
+.info {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+}
+
+.ul {
+  height: 100%;
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.li {
+  width: 33.33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: rgb(6, 6, 44);
+}
+
+.liWelcome {
+  color: aqua;
+  border-bottom: solid aqua;
+  transition: all 0.5s;
+}
+.liWelcome:hover {
+  background-color: aqua;
+  color: rgb(6, 6, 44);
+}
+
+.liSkills {
+  color: chartreuse;
+  border-bottom: solid chartreuse;
+  transition: all 0.5s;
+}
+.liSkills:hover {
+  background-color: chartreuse;
+  color: rgb(6, 6, 44);
+}
+
+.liProjects {
+  color: yellow;
+  border-bottom: solid yellow;
+  transition: all 0.5s;
+}
+.liProjects:hover {
+  background-color: yellow;
+  color: rgb(6, 6, 44);
+}
+
+@media screen and (max-width: 800px) {
+  .s1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .left {
+    width: 100%;
+    height: 40%;
+    /* border: solid red; */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* media quary change require */
+  .right {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    /* border: solid blue; */
+  }
+
+  .nav {
+    height: 40px;
+  }
+
+  .li {
+    font-size: 1rem;
+  }
+
+  .h2Style {
+    font-size: 1.5rem;
+  }
+  .h1Style {
+    font-size: 2rem;
+  }
+  .skillHeading {
+    padding: 40px 0px 0px 20px;
+    font-size: 2rem;
+  }
+
+  .skillOptions {
+    padding: 10px 0px;
+  }
+
+  .skillNames {
+    display: inline-block;
+    border: solid chartreuse;
+    border-radius: 30px;
+    color: chartreuse;
+    padding: 3px 20px;
+    margin: 10px;
+    font-size: 0.9rem;
+  }
+
+  .myInfo {
+    padding: 5px;
+    width: 90%;
+    font-size: 0.8rem;
+    color: chartreuse;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    word-spacing: 2px;
+  }
+  .scrollDown {
+    width: 80%;
+    padding: 10px;
+    text-align: right;
+  }
+
+  .btn {
+    padding: 5px;
+    font-size: 0.8rem;
+  }
+
+  .projectHeading {
+    font-size: 2rem;
+    padding: 40px 20px 0px 0px;
+  }
+  .projectBody {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .projectWrapper {
+    width: 100%;
+    height: 500px;
+    border: solid yellow;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    box-shadow: 4px 4px yellowgreen;
+    transition: box-shadow 0.4s;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  .projectWrapper:hover {
+    box-shadow: 10px 10px 4px yellowgreen;
+  }
+
+  .projectImage {
+    width: 100%;
+    height: 60%;
+  }
+
+  .projectInfo {
+    width: 100%;
+    height: 40%;
+    padding: 10px;
+    color: yellow;
+  }
+
+  .name {
+    font-size: 1rem;
+  }
+  .info {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+}
