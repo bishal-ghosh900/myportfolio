@@ -60,6 +60,13 @@ body {
   border: solid aqua;
 }
 
+.socialIcons {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
 .intro {
   color: aqua;
 }
@@ -216,6 +223,7 @@ body {
   font-size: 0.8rem;
   padding: 5px 10px;
   margin: 10px 5px 5px 5px;
+  font-family: "Courgette", "sans-serif";
 }
 
 .nav {
