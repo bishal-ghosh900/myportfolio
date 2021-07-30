@@ -208,6 +208,16 @@ body {
   font-weight: 400;
 }
 
+.techs {
+  display: inline-block;
+  border: solid yellow;
+  border-radius: 30px;
+  color: yellow;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  margin: 10px 5px 5px 5px;
+}
+
 .nav {
   position: fixed;
   top: 0;
@@ -393,5 +403,15 @@ body {
   .info {
     font-size: 0.8rem;
     font-weight: 400;
+  }
+
+  .techs {
+    display: inline-block;
+    border: solid yellow;
+    border-radius: 30px;
+    color: yellow;
+    font-size: 0.5rem;
+    padding: 5px 5px;
+    margin: 5px 2px 2px 2px;
   }
 }

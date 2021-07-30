@@ -18,6 +18,9 @@ function Projects(props) {
               <div className="projectInfo">
                 <h1 className="name">{v.name}</h1>
                 <h3 className="info">{v.info}</h3>
+                {v.techs.map((t) => {
+                  return <div className="techs">{t}</div>;
+                })}
               </div>
             </a>
           );
