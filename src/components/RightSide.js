@@ -4,7 +4,7 @@ import Data from "./data";
 function RightSide(props) {
   return (
     <div className="right">
-      <img className="profileImage" src={Data.profile_pic} alt={Data.name} />
+      <img className="profileImage skeleton" src={Data.profile_pic} alt={Data.name} />
 
       <div className="socialIcons">
         <a

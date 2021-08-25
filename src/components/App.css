@@ -62,6 +62,19 @@ body {
   border: solid aqua;
 }
 
+.skeleton{
+  animation: sk-animation 1s linear infinite alternate;
+}
+
+@keyframes sk-animation{
+  0%{
+    background-color:hsl(200, 20%, 70%);
+  }
+  100%{
+    background-color:hsl(203, 69%, 10%);
+  }
+}
+
 .socialIcons {
   padding-top: 20px;
   display: flex;
